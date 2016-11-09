@@ -7,6 +7,7 @@ This is a lightweight plugin for [netdata](https://github.com/firehol/netdata) t
 1. [Install Netdata](https://github.com/firehol/netdata/wiki/Installation)
 2. Build & install chip.plugin:
 ```
+curl -O https://raw.githubusercontent.com/jengel/chip-netdata-plugin/master/chip.plugin.c
 gcc -o chip.plugin chip.plugin.c
 sudo cp chip.plugin /usr/libexec/netdata/plugins.d/
 ```
