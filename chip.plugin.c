@@ -243,7 +243,7 @@ void gather_chart_data(void)
     memset(gData, 0, sizeof(gData));
     gIsValid = 0;
 
-    power_status = read_register_value(0x00);
+    power_status = read_register_value(0x01);
     charge_ctl = read_register_value(0x33);
 
     float temp = read_multi_value(0x5E, 0x5F) * 0.18 - 228.46;
