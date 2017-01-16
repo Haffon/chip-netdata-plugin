@@ -10,6 +10,7 @@ This is a lightweight plugin for [netdata](https://github.com/firehol/netdata) t
 curl -O https://raw.githubusercontent.com/jengel/chip-netdata-plugin/master/chip.plugin.c
 gcc -o chip.plugin chip.plugin.c
 sudo cp chip.plugin /usr/libexec/netdata/plugins.d/
+sudo adduser netdata i2c
 ```
 3. (Optional) Restart netdata to immediately pick up the new plugin. Otherwise, it will be automatically recognized within 60 seconds.
 ```
